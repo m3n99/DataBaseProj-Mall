@@ -1,6 +1,5 @@
 # DataBaseProj-Mall
 
-# DataBase-Mall
 
 Summary
 Our project is to make a management System for a Mall (Baladi Center), which is under construction and contain many various shops, employee and Tenants.
