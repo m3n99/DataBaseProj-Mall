@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="398.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="projbase.RecivablePaymentsController">
+   <children>
+      <Button layoutX="304.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleBackAction" prefHeight="26.0" prefWidth="52.0" text="Back" />
+      <VBox layoutX="20.0" layoutY="20.0" prefHeight="308.0" prefWidth="350.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="650.0">
+               <children>
+                  <Label alignment="CENTER" text="RecivablePayments" textFill="#c71111">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="TvR" prefHeight="146.0" prefWidth="434.0">
+               <columns>
+                  <TableColumn fx:id="EmSsn" onEditCommit="#changeEmSsnCellEvent" prefWidth="150.0" text="EmSsn" />
+                  <TableColumn fx:id="PId" onEditCommit="#changePIdCellEvent" prefWidth="150.0" text="PId" />
+               </columns>
+            </TableView>
+            <HBox prefHeight="38.0" prefWidth="650.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="EmSsnTextField" promptText="EmSsn" />
+                  <TextField fx:id="PIdTextField" promptText="PId" />
+               </children>
+            </HBox>
+            <VBox prefHeight="51.0" prefWidth="650.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addNewRecivablePayments" text="Add New RecivablePayments" />
+                  <Button mnemonicParsing="false" onAction="#deleteSelectedRecivablePayments" text="Delete Selected RecivablePayments" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

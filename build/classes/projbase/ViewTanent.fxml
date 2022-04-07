@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projbase.ViewTanentController">
+   <children>
+      <Button layoutX="658.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleBackAction" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="356.0" prefWidth="700.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="700.0">
+               <children>
+                  <Label alignment="CENTER" text="Tanents" textFill="#c71111">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="TvT" prefHeight="200.0" prefWidth="700.0">
+              <columns>
+                <TableColumn fx:id="TaSsn" onEditCommit="#changeTaSsnCellEvent" prefWidth="100.0" text="TaSsn" />
+                <TableColumn fx:id="TaName" onEditCommit="#changeTaNameCellEvent" prefWidth="100.0" text="Name" />
+                  <TableColumn fx:id="PhoneNum" onEditCommit="#changePhoneNumCellEvent" prefWidth="100.0" text="PhoneNumber" />
+                  <TableColumn fx:id="BirthDe" onEditCommit="#changeBirthDeCellEvent" prefWidth="100.0" text="BirthDate" />
+                  <TableColumn fx:id="AddressOfBank" onEditCommit="#changeAddressOfBankCellEvent" prefWidth="100.0" text="AddressOfBank" />
+                  <TableColumn fx:id="TypeOfShop" onEditCommit="#changeTypeOfShopCellEvent" prefWidth="100.0" text="TypeOfShop" />
+                  <TableColumn fx:id="BankAccount" onEditCommit="#changeBankAccountCellEvent" prefWidth="100.0" text="BankAccount" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="38.0" prefWidth="700.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="TaSsnTextField" prefHeight="26.0" prefWidth="100.0" promptText="TaSsn" />
+                  <TextField fx:id="TaNameTextField" prefHeight="26.0" prefWidth="100.0" promptText="Name" />
+                  <TextField fx:id="PhoneNumTextField" prefHeight="26.0" prefWidth="100.0" promptText="PhoneNumber" />
+                  <TextField fx:id="BirthDeTextField" prefHeight="26.0" prefWidth="100.0" promptText="BirthDate" />
+                  <TextField fx:id="AddressOfBankTextField" prefHeight="26.0" prefWidth="100.0" promptText="AddressOfBank" />
+                  <TextField fx:id="TypeOfShopTextField" prefHeight="26.0" prefWidth="100.0" promptText="TypeOfShop" />
+                  <TextField fx:id="BankAccountTextField" prefHeight="26.0" prefWidth="100.0" promptText="BankAccount" />
+               </children>
+            </HBox>
+            <VBox prefHeight="51.0" prefWidth="700.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addNewTanent" text="Add New Tanents" />
+                  <Button mnemonicParsing="false" onAction="#deleteSelectedTanents" text="Delete Selected Tanents" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button layoutX="10.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleReportAction" prefHeight="26.0" prefWidth="110.0" text="Report Tenents" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projbase.RoomReViewController">
+   <children>
+      <Button layoutX="594.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleBackAction" prefHeight="26.0" prefWidth="52.0" text="Back" />
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="345.0" prefWidth="700.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="750.0">
+               <children>
+                  <Label alignment="CENTER" text="Rent Room" textFill="#c71111">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="TvRE" prefHeight="146.0" prefWidth="700.0">
+               <columns>
+                  <TableColumn fx:id="Rid" onEditCommit="#changeRidCellEvent" prefWidth="100.0" text="RId" />
+                  <TableColumn fx:id="SpaceOfRoom" onEditCommit="#changeSpaceOfRoomCellEvent" prefWidth="100.0" text="SpaceOfRoom" />
+                  <TableColumn fx:id="FloorNum" onEditCommit="#changeFloorNumCellEvent" prefWidth="100.0" text="FloorNum" />
+                  <TableColumn fx:id="ParkingNum" onEditCommit="#changeParkingNumCellEvent" prefWidth="100.0" text="ParkingNum" />
+                  <TableColumn fx:id="TaSsn" onEditCommit="#changeTaSsnCellEvent" prefWidth="100.0" text="TaSsn" />
+                  <TableColumn fx:id="S_Date" onEditCommit="#changeS_DateCellEvent" prefWidth="100.0" text="S_Date" />
+                  <TableColumn fx:id="D_Date" onEditCommit="#changeD_DateCellEvent" prefWidth="100.0" text="D_Date" />
+               </columns>
+            </TableView>
+            <HBox prefHeight="38.0" prefWidth="650.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="RidTextField" prefHeight="26.0" prefWidth="100.0" promptText="RId" />
+                  <TextField fx:id="SpaceOfRoomTextField" prefHeight="26.0" prefWidth="100.0" promptText="SpaceOfRoom" />
+                  <TextField fx:id="FloorNumTextField" prefHeight="26.0" prefWidth="100.0" promptText="FloorNum" />
+                  <TextField fx:id="ParkingNumTextField" prefHeight="26.0" prefWidth="99.0" promptText="ParkingNum" />
+                  <TextField fx:id="TaSsnTextField" prefHeight="26.0" prefWidth="100.0" promptText="TaSsn" />
+                  <TextField fx:id="S_DateTextField" prefHeight="26.0" prefWidth="100.0" promptText="S_Date" />
+                  <TextField fx:id="D_DateTextField" prefHeight="26.0" prefWidth="100.0" promptText="D_Date" />
+               </children>
+            </HBox>
+            <VBox prefHeight="51.0" prefWidth="650.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addNewRoomRe" text="Add New Rent Room" />
+                  <Button mnemonicParsing="false" onAction="#deleteSelectedRoomRe" text="Delete Selected Rent Room" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

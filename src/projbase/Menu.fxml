@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projbase.MenuController">
+   <children>
+      <ImageView fitHeight="488.0" fitWidth="700.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@97209325_305190587143850_7329408252364455936_n.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="79.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleEmployeeAction" prefHeight="38.0" prefWidth="82.0" text="Emplyee" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="79.0" layoutY="143.0" mnemonicParsing="false" onAction="#handlePaymentAction" prefHeight="38.0" prefWidth="90.0" text="Payment" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleWorkAction" prefHeight="38.0" prefWidth="82.0" text="Work" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="149.0" mnemonicParsing="false" onAction="#handlePayAction" prefHeight="38.0" prefWidth="82.0" text="Pay" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleTanentAction" prefHeight="38.0" prefWidth="82.0" text="Tanent" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="79.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleRentAction" prefHeight="38.0" prefWidth="82.0" text="Rent" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="275.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleBillAction" prefHeight="38.0" prefWidth="82.0" text="Bill" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="79.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleBillLineAction" prefHeight="38.0" prefWidth="82.0" text="Bill_Line" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="448.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleEmGeneratesPaymentControllerAction" prefHeight="38.0" prefWidth="172.0" text="Generate Payment" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="448.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleGenerateBillAction" prefHeight="38.0" prefWidth="172.0" text="Generate Bill" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="596.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="31.0" prefWidth="58.0" text="Exit" textFill="#79000f">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="448.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleRecivablePaymentsAction" prefHeight="38.0" prefWidth="172.0" text="Generate recivable" textAlignment="CENTER" textFill="#01016f">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

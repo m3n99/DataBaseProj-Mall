@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projbase.ReportTController">
+   <children>
+      <VBox layoutX="30.0" layoutY="30.0" prefHeight="321.0" prefWidth="638.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="650.0">
+               <children>
+                  <Label alignment="CENTER" text="Tenant Quere" textFill="#c71111">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="TvE" prefHeight="146.0" prefWidth="435.0">
+               <columns>
+                  <TableColumn fx:id="TaName" prefWidth="224.80001258850098" text="Tenants Name" />
+               </columns>
+            </TableView>
+            <HBox prefHeight="38.0" prefWidth="650.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="241.0" text="chose the type and the date of the Tenant" />
+                  <TextField fx:id="typeTextField" prefHeight="26.0" prefWidth="152.0" promptText="Type Of Shop" />
+                  <TextField fx:id="dateTextField" prefHeight="26.0" prefWidth="139.0" promptText="Rent Date" />
+               </children>
+            </HBox>
+            <VBox prefHeight="38.0" prefWidth="466.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleReportAction" prefHeight="26.0" prefWidth="153.0" text="Report the Tenants" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button layoutX="30.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleBackAction" text="Back" />
+   </children>
+</AnchorPane>

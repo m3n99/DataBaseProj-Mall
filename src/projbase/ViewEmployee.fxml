@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projbase.ViewEmployeeController">
+   <children>
+      <Button layoutX="800.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleBackAction" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <VBox prefHeight="356.0" prefWidth="900.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="700.0">
+               <children>
+                  <Label alignment="CENTER" text="Employees" textFill="#c71111">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="TvE" prefHeight="198.0" prefWidth="900.0">
+              <columns>
+                <TableColumn fx:id="EmSsn" onEditCommit="#changeEmSsnCellEvent" prefWidth="100.0" text="EmSsn" />
+                <TableColumn fx:id="Salary" onEditCommit="#changeSalaryCellEvent" prefWidth="115.19998168945312" text="Salary" />
+                  <TableColumn fx:id="EmName" onEditCommit="#changeEmNameCellEvent" prefWidth="106.40003967285156" text="Name" />
+                  <TableColumn fx:id="PhoneNum" onEditCommit="#changePhoneNumCellEvent" prefWidth="116.00006103515625" text="PhoneNumber" />
+                  <TableColumn fx:id="Birthdate" onEditCommit="#changeBirthdateCellEvent" prefWidth="98.4000244140625" text="Birthdate" />
+                  <TableColumn fx:id="Address" onEditCommit="#changeAddressCellEvent" prefWidth="112.0" text="Address" />
+                  <TableColumn fx:id="EmployeeType" onEditCommit="#changeEmployeeTypeCellEvent" prefWidth="121.5999755859375" text="EmployeeType" />
+                  <TableColumn fx:id="Rid" onEditCommit="#changeRidCellEvent" prefWidth="130.39990234375" text="Roomid" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="38.0" prefWidth="650.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="EmSsnTextField" prefHeight="26.0" prefWidth="100.0" promptText="EmSsn" />
+                  <TextField fx:id="SalaryTextField" prefHeight="26.0" prefWidth="100.0" promptText="Salary" />
+                  <TextField fx:id="EmNameTextField" prefHeight="26.0" prefWidth="100.0" promptText="Name" />
+                  <TextField fx:id="PhoneNumTextField" prefHeight="26.0" prefWidth="100.0" promptText="PhoneNumber" />
+                  <TextField fx:id="BirthdateextField" prefHeight="26.0" prefWidth="100.0" promptText="Birthdate" />
+                  <TextField fx:id="AddressTextField" prefHeight="26.0" prefWidth="100.0" promptText="Address" />
+                  <TextField fx:id="EmployeeTypeTextField" prefHeight="26.0" prefWidth="99.0" promptText="EmployeeType" />
+                  <TextField fx:id="RidTypeTextField" prefHeight="26.0" prefWidth="115.0" promptText="Roomid" />
+               </children>
+            </HBox>
+            <VBox prefHeight="92.0" prefWidth="900.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addNewEmployee" text="Add New Employee" />
+                  <Button mnemonicParsing="false" onAction="#deleteSelectedEmployee" text="Delete Selected Employee" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button layoutY="377.0" mnemonicParsing="false" onAction="#handleReportAction" prefHeight="26.0" prefWidth="134.0" text="Report Employee" />
+   </children>
+</AnchorPane>
